@@ -22,7 +22,7 @@ class Produto extends Model
         $produto = new Produto;
         $produto->categoria_id = $categoriaId;
         $produto->nome = $produtoNome;
-        $produto->preco = $produtoPreco;
+        $produto->preco = abs($produtoPreco);
 
         Categoria::find($categoriaId)->addProduto($produto);
     }
@@ -35,7 +35,7 @@ class Produto extends Model
         $produto = Produto::find($produtoId);
         $produto->categoria_id = $categoriaId;
         $produto->nome = $produtoNome;
-        $produto->preco = $produtoPreco;
+        $produto->preco = abs($produtoPreco);
 
         $produto->update();
     }
