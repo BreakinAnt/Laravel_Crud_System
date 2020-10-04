@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+}
+
+#home_atalho {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  padding: 20px;
+  text-align: center;
+  color:black;
+  text-decoration: none;
+}
+
+#home_atalho:active{
+  color:#788f81;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1280px;
+  max-width: 1280px;
+  background-color:#ededed;
+}
+/* ------------------------------------------------  */
+
+/* input form */
+.input_form{
+  background-color:#d9d9d9;
+  padding: 30px 200px;
+}
+
+.input_form #categorias {
+  background-color:#56a356;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.input_form #categorias label{
+  padding-right: 40px;
+}
+
+.input_form #dados_produto input{
+  padding: 12px 20px;
+  margin: 0 0 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input_form button{
+  background-color:#56a356;
+  border: none;
+  color: white;
+  padding: 10px 35px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* ------------------------------------------------  */
+
+/* table produtos  */
+.tabela{
+  padding: 0px 200px;
+}
+
+table {
+  cursor: default;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+table #tabela_produto:hover {
+  transition: 0.15s;
+  background-color:#8ebfa9;
+}
+  
+#tabela_atributos{
+  background-color:#56a356;
+  color: #ededed;
+}
+
+#tabela_produto{
+  background-color:#b1e3b4;
+}
+
+#tabela_produto:nth-child(even){
+  background-color:#e1f5e1;
+}
+
+#tabela_produto td{
+  border-radius: 25px;
+  border-bottom: 1px solid #73AD21;
+  text-align: left;
+  padding: 2px;
+}
+
+#tabela_editar a {
+  color:black;
+}
+
+#tabela_editar a:hover {
+  transition: 0.15s;
+  color:#788f81;
+}
+
+#tabela_editar a:active{
+  color:#e1f5e1;
+}
+
