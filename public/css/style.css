@@ -102,7 +102,6 @@ table #tabela_produto:hover {
 }
 
 #tabela_produto td{
-  border-radius: 25px;
   border-bottom: 1px solid #73AD21;
   text-align: left;
   padding: 2px;
