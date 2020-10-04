@@ -20,7 +20,6 @@
             @foreach($categorias as $categoria)
                 <input type="radio" id="{{$categoria->titulo.'_'.$categoria->id}}" value="{{$categoria->id}}" name="db_cat" @if($categoriaId == $categoria->id) checked="checked" @endif required>
                 <label for="{{$categoria->titulo}}">{{$categoria->titulo}}</label>
-                <br>
             @endforeach
             </div>
 
