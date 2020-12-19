@@ -1,7 +1,3 @@
-* {
-  margin: 0px;
-}
-
 #home_atalho {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   cursor: pointer;
@@ -119,4 +115,30 @@ table #tabela_produto:hover {
 #tabela_editar a:active{
   color:#e1f5e1;
 }
+/* ------------------------------------------------  */
 
+/* model produtos */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); 
+}
+
+#produto_modal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #8ebfa9;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+}
+
+#produto_modal td {
+    padding: 5px;
+} 

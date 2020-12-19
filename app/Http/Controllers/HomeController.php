@@ -32,13 +32,7 @@ class HomeController extends Controller
 
         Produto::addProduto($categoriaId, $produtoNome, $produtoPreco);
 
-        return view("index", [
-            'siteTitle'=> 'Home CRUD',
-            'categoriaId'=>null,
-            'categorias'=> Categoria::all(),
-            'produtoId'=>-1,        
-            'produtos'=>Produto::all(),
-            ]);
+        return redirect()->route('home.getindex');
     }
 
     public function getUpdateProd($id){

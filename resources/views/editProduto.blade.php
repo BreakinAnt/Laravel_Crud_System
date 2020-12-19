@@ -25,7 +25,7 @@
 
             <div id="dados_produto">
                 <input type="text" id="db_nome" name="db_nome" placeholder="Nome do produto" value="{{$produto->nome}}" required><br>
-                <input type="number" step="0.01" id="db_preco" name="db_preco" placeholder="Preço do produto" value="{{$produto->preco}}" required><br>
+                <input type="number" step="0.01" id="db_preco" name="db_preco" placeholder="Novo preço" required></input><br>
             </div>
 
         <!-- Editar -->
